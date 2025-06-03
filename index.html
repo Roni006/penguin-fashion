@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TAIL WIND CSS CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- GOGGLE FONTS LINK  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- CSS LINK -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/index.css">
-
     <link rel="stylesheet" href="tailwind.config.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Penguin Fashion</title>
 </head>
 
-<body>
+<body class="font-[Roboto]">
 
     <!--HEADER SECTION START -->
-    <header class="header-section bg-[#FFFBF0]">
+    <header class="header-section  bg-[#FFFBF0]">
         <div class="container mx-auto">
             <div class="header-row flex justify-between items-center py-[40px]">
                 <div class="header-left">
@@ -27,11 +30,15 @@
                 </div>
                 <div class="header-right">
                     <nav>
-                        <ul class="menus flex aling-cener justify-center text-[#3C3C3C]  font-bold text-[16px]">
-                            <li><a href="#" class="px-[40px] text-[18px]">Home</a></li>
-                            <li><a href="#" class="px-[40px] text-[18px]">Product</a></li>
-                            <li><a href="#" class="px-[40px] text-[18px]">About Us</a></li>
-                            <li><a href="#" class="px-[40px] text-[18px]">Contact us</a></li>
+                        <ul class="menus flex aling-cener justify-center text-[#3C3C3C]  font-bold text-[16px] ">
+                            <li><a href="#" class="px-[40px] text-[18px] hover:text-[#FABE4C] duration-[0.2S]">Home</a>
+                            </li>
+                            <li><a href="#"
+                                    class="px-[40px] text-[18px] hover:text-[#FABE4C] duration-[0.2S]">Product</a></li>
+                            <li><a href="#" class="px-[40px] text-[18px] hover:text-[#FABE4C] duration-[0.2S]">About
+                                    Us</a></li>
+                            <li><a href="#" class="px-[40px] text-[18px] hover:text-[#FABE4C] duration-[0.2S]">Contact
+                                    us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -40,9 +47,8 @@
     </header>
     <!--HEADER SECTION START -->
 
-
     <!--HERO SECTION START -->
-    <section class="hero-section bg-[#FFFBF0]">
+    <section class="hero-section  bg-[#FFFBF0]">
         <div class="container mx-auto">
             <div class="hero-row flex items-center justify-between pr-[250px] pb-[130px]">
                 <div class="hero-left">
@@ -57,25 +63,11 @@
                         <p class="text-[16px] mt-[10px]">Lorem Ipsum is simply dummy text of the printing<br>
                             and typesetting industry.</p>
                     </div>
-                    <div class="hero-btn  mt-[10px]">
-                        <button href="#"
-                            class="flex items-center bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px] gap-[10px]">
-                            <span>
-                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.08 3.99998C18.9072 3.7006 18.6598 3.45111 18.3618 3.27585C18.0639 3.10059 17.7256 3.00554 17.38 2.99998H4.58L4 0.739976C3.9414 0.521814 3.81066 0.32992 3.62908 0.195548C3.44749 0.0611759 3.22576 -0.00775711 3 -2.38712e-05H1C0.734784 -2.38712e-05 0.48043 0.105333 0.292893 0.292869C0.105357 0.480406 0 0.73476 0 0.999976C0 1.26519 0.105357 1.51955 0.292893 1.70708C0.48043 1.89462 0.734784 1.99998 1 1.99998H2.24L5 12.26C5.0586 12.4781 5.18934 12.67 5.37092 12.8044C5.55251 12.9388 5.77424 13.0077 6 13H15C15.1847 12.9994 15.3656 12.9477 15.5227 12.8507C15.6798 12.7536 15.8069 12.6149 15.89 12.45L19.17 5.88998C19.3122 5.59199 19.3783 5.26345 19.3626 4.93366C19.3469 4.60387 19.2498 4.2831 19.08 3.99998Z"
-                                        fill="white" />
-                                    <path
-                                        d="M5.5 18C6.32843 18 7 17.3284 7 16.5C7 15.6716 6.32843 15 5.5 15C4.67157 15 4 15.6716 4 16.5C4 17.3284 4.67157 18 5.5 18Z"
-                                        fill="white" />
-                                    <path
-                                        d="M15.5 18C16.3284 18 17 17.3284 17 16.5C17 15.6716 16.3284 15 15.5 15C14.6716 15 14 15.6716 14 16.5C14 17.3284 14.6716 18 15.5 18Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                            <span>BUY NOW</span>
-                        </button>
+                    <div class="hero-btn  mt-[15px]">
+                        <a href="#"
+                            class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                            <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                        </a>
                     </div>
                 </div>
                 <div class="hero-right">
@@ -86,10 +78,243 @@
     </section>
     <!--HERO SECTION START -->
 
+    <!--JACKET SECTION START -->
+    <section class="jacket-section  pt-[50px] pb-[90px]">
+        <div class="container mx-auto">
+            <div class="jacket-title">
+                <h1 class="font-bold text-[48px] text-[#363958]">WOMAN JACKET</h1>
+            </div>
+
+            <div class="jacket-row flex items-center justify-evenly gap-[40px] mt-[50px]">
+                <div
+                    class="jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
+                    <div class="jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
+                        <img src="assets/images/jacket-1.png" alt="Jacket image">
+                    </div>
+                    <div class="jacktet-subtitle">
+                        <h2 class="text-[#363958] text-[24px] font-bold mt-[18px]">Yellow Coat Jacket</h2>
+                    </div>
+                    <div class="jacket-text mt-[15px]">
+                        <p class="text-[16px]">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                    </div>
+                    <div class="jacket-price-btn flex items-center justify-between mt-[20px]">
+                        <div class="price">
+                            <h3 class="text-[#FABE4C] text-[36px] font-bold">$234</h3>
+                        </div>
+                        <div class="hero-btn  mt-[10px]">
+                            <a href="#"
+                                class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                                <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class=" jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
+                    <div class="flex items-center justify-center jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
+                        <img src="assets/images/jacket-2.png" alt="Jacket image">
+                    </div>
+                    <div class="jacktet-subtitle">
+                        <h2 class="text-[#363958] text-[24px] font-bold mt-[18px]">Yellow Coat Jacket</h2>
+                    </div>
+                    <div class="jacket-text mt-[15px]">
+                        <p class="text-[16px]">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                    </div>
+                    <div class="jacket-price-btn flex items-center justify-between mt-[20px]">
+                        <div class="price">
+                            <h3 class="text-[#FABE4C] text-[36px] font-bold">$234</h3>
+                        </div>
+                        <div class="hero-btn  mt-[10px]">
+                            <a href="#"
+                                class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                                <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
+                    <div class="flex items-center justify-center jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
+                        <img src="assets/images/jacket-3.png" alt="Jacket image">
+                    </div>
+                    <div class="jacktet-subtitle">
+                        <h2 class="text-[#363958] text-[24px] font-bold mt-[18px]">Yellow Coat Jacket</h2>
+                    </div>
+                    <div class="jacket-text mt-[15px]">
+                        <p class="text-[16px]">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                    </div>
+                    <div class="jacket-price-btn flex items-center justify-between mt-[20px]">
+                        <div class="price">
+                            <h3 class="text-[#FABE4C] text-[36px] font-bold">$234</h3>
+                        </div>
+                        <div class="hero-btn  mt-[10px]">
+                            <a href="#"
+                                class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                                <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jacket-title mt-[50px]">
+                <h1 class="font-bold text-[48px] text-[#363958]">MAN JACKET</h1>
+            </div>
+
+            <div class="jacket-row flex items-center justify-evenly gap-[40px] mt-[50px]">
+                <div
+                    class="jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
+                    <div class="jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
+                        <img src="assets/images/jacket-4.png" alt="Jacket image">
+                    </div>
+                    <div class="jacktet-subtitle">
+                        <h2 class="text-[#363958] text-[24px] font-bold mt-[18px]">Yellow Coat Jacket</h2>
+                    </div>
+                    <div class="jacket-text mt-[15px]">
+                        <p class="text-[16px]">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                    </div>
+                    <div class="jacket-price-btn flex items-center justify-between mt-[20px]">
+                        <div class="price">
+                            <h3 class="text-[#FABE4C] text-[36px] font-bold">$234</h3>
+                        </div>
+                        <div class="hero-btn  mt-[10px]">
+                            <a href="#"
+                                class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                                <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div
+                    class=" jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
+                    <div class="flex items-center justify-center jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
+                        <img src="assets/images/jacket-5.png" alt="Jacket image">
+                    </div>
+                    <div class="jacktet-subtitle">
+                        <h2 class="text-[#363958] text-[24px] font-bold mt-[18px]">Yellow Coat Jacket</h2>
+                    </div>
+                    <div class="jacket-text mt-[15px]">
+                        <p class="text-[16px]">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                    </div>
+                    <div class="jacket-price-btn flex items-center justify-between mt-[20px]">
+                        <div class="price">
+                            <h3 class="text-[#FABE4C] text-[36px] font-bold">$234</h3>
+                        </div>
+                        <div class="hero-btn  mt-[10px]">
+                            <a href="#"
+                                class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                                <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div
+                    class=" jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
+                    <div class="flex items-center justify-center jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
+                        <img src="assets/images/jacket-6.png" alt="Jacket image">
+                    </div>
+                    <div class="jacktet-subtitle">
+                        <h2 class="text-[#363958] text-[24px] font-bold mt-[18px]">Yellow Coat Jacket</h2>
+                    </div>
+                    <div class="jacket-text mt-[15px]">
+                        <p class="text-[16px]">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                    </div>
+                    <div class="jacket-price-btn flex items-center justify-between mt-[20px]">
+                        <div class="price">
+                            <h3 class="text-[#FABE4C] text-[36px] font-bold">$234</h3>
+                        </div>
+                        <div class="hero-btn  mt-[10px]">
+                            <a href="#"
+                                class="buy-btn flex gap-2  bg-[#85A019] inline-flex items-center px-[35px] py-[18px] rounded-[10px] text-white font-bold text-[18px]">
+                                <span><img src="assets/icons/buy-btn.svg" alt=""></span>BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!--JACKET SECTION START -->
+
+    <!--SHOPING SECTION START -->
+    <section class="shoping-section">
+        <div class="container mx-auto">
+            <div class="shoping-row flex items-center justify-around gap-[50px]">
+                <div class="shoping-left">
+                    <div class="shoping-card-row">
+                        <div class="mb-[20px] card-1 flex items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md w-[490px] 
+                        pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded-[20px]">
+                            <div class="shoping-icon">
+                                <img src="assets/icons/house.png" alt="">
+                            </div>
+                            <div class="shoping-text">
+                                <div class="card-title">
+                                    <h2 class="text-[24px] text-[#363958] mb-[15px]">Find the perfect Fit</h2>
+                                </div>
+                                <div class="card-info">
+                                    <p class="text-[16px]">Everybody is different, which is why we
+                                        offer styles for every body.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-[20px] card-1 flex items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md w-[490px] 
+                        pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded-[20px]">
+                            <div class="shoping-icon">
+                                <img src="assets/icons/house.png" alt="">
+                            </div>
+                            <div class="shoping-text">
+                                <div class="card-title">
+                                    <h2 class="text-[24px] text-[#363958] mb-[15px]">Find the perfect Fit</h2>
+                                </div>
+                                <div class="card-info">
+                                    <p class="text-[16px]">Everybody is different, which is why we
+                                        offer styles for every body.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-1 flex items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md w-[490px] 
+                        pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded-[20px]">
+                            <div class="shoping-icon">
+                                <img src="assets/icons/house.png" alt="">
+                            </div>
+                            <div class="shoping-text">
+                                <div class="card-title">
+                                    <h2 class="text-[24px] text-[#363958] mb-[15px]">Find the perfect Fit</h2>
+                                </div>
+                                <div class="card-info">
+                                    <p class="text-[16px]">Everybody is different, which is why we
+                                        offer styles for every body.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="shoping-right">
+                    <img src="assets/images/shopping 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SHOPING SECTION START -->
+
+
     <!-- SECTION START -->
     <!-- SECTION START -->
 
 
+    <!-- SECTION START -->
+    <!-- SECTION START -->
 </body>
 
 </html>
