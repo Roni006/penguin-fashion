@@ -21,15 +21,15 @@
 
     <!--HEADER SECTION START -->
     <header class="header-section  bg-[#FFFBF0]">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-2">
             <div class="header-row flex justify-between items-center py-[40px]">
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"> <img src="assets/images/logo.png" alt="Header logo"></a>
+                        <a  href="index.html"> <img src="assets/images/logo.png" alt="Header logo"></a>
                     </div>
                 </div>
-                <div class="header-right">
-                    <nav>
+                <div class="header-right flex items-center">
+                    <nav class="hidden lg:block">
                         <ul class="menus flex aling-cener justify-center text-[#3C3C3C]  font-bold text-[16px] ">
                             <li><a href="#" class="px-[40px] text-[18px] hover:text-[#FABE4C] duration-[0.2S]">Home</a>
                             </li>
@@ -41,6 +41,9 @@
                                     us</a></li>
                         </ul>
                     </nav>
+                    <div class="bars block  lg:hidden">
+                        <img class="shadow-lg py-4 px-4 cursor-pointer rounded-md" src="assets/icons/bars.svg" alt="bars icon">
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,12 +51,12 @@
     <!--HEADER SECTION START -->
 
     <!--HERO SECTION START -->
-    <section class="hero-section  bg-[#FFFBF0]">
+    <section class="  hero-section  bg-[#FFFBF0]">
         <div class="container mx-auto">
-            <div class="hero-row flex items-center justify-between pr-[250px] pb-[130px]">
-                <div class="hero-left">
+            <div class="hero-row px-2 flex flex-col lg:flex-row items-center justify-between sm:pr-[250px] pb-[130px]">
+                <div class="hero-left mb-5">
                     <div class="hero-title">
-                        <h1 class="text-[80px] leading-[90px] font-semibold">
+                        <h1 class="text-[80px] leading-[90px]  font-semibold">
                             <span class="text-[#FABE4C]">Be the Penguins <br>
                             </span>
                             of Winter
@@ -79,13 +82,13 @@
     <!--HERO SECTION START -->
 
     <!--JACKET SECTION START -->
-    <section class="jacket-section  pt-[50px] pb-[90px]">
+    <section class=" jacket-section  pt-[50px] pb-[90px]">
         <div class="container mx-auto">
             <div class="jacket-title">
                 <h1 class="font-bold text-[48px] text-[#363958]">WOMAN JACKET</h1>
             </div>
 
-            <div class="jacket-row flex items-center justify-evenly gap-[40px] mt-[50px]">
+            <div class="jacket-row grid grid-cols-1  sm:grid-cols-3 gap-[40px] mt-[50px]">
                 <div
                     class="jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
                     <div class="jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
@@ -166,7 +169,7 @@
                 <h1 class="font-bold text-[48px] text-[#363958]">MAN JACKET</h1>
             </div>
 
-            <div class="jacket-row flex items-center justify-evenly gap-[40px] mt-[50px]">
+            <div class="jacket-row grid grid-cols-1 sm:grid-cols-3 gap-[40px] mt-[50px]">
                 <div
                     class="jacket1 bg-[#fff] shadow-md w-[370px] pt-[18px] pr-[18px] pb-[25px] pl-[18px] rounded-[20px]">
                     <div class="jacket-bg bg-[#F1F1F1] p-[20px] rounded-[20px]">
@@ -247,59 +250,59 @@
     <!--JACKET SECTION START -->
 
     <!--SHOPING SECTION START -->
-    <section class="shoping-section">
+    <section class=" shoping-section">
         <div class="container mx-auto">
-            <div class="shoping-row flex items-center justify-around gap-[50px]">
+            <div class="shoping-row flex items-center justify-around gap-[50px] flex-col-reverse sm:flex-row">
                 <div class="shoping-left">
                     <div class="shoping-card-row">
-                        <div class="mb-[20px] card-1 flex items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md w-[490px] 
+                        <div class="mb-[20px] card-1 flex flex-col sm:flex-row items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md sm:w-[490px] mt-5 
                         pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded-[20px]">
                             <div class="shoping-icon">
                                 <img src="assets/icons/house.png" alt="">
                             </div>
                             <div class="shoping-text">
                                 <div class="card-title">
-                                    <h2 class="text-[24px] text-[#363958] mb-[15px]">Find the perfect Fit</h2>
+                                    <h2 class="text-[24px] text-[#363958] mb-[15px] text-center">Find the perfect Fit</h2>
                                 </div>
                                 <div class="card-info">
-                                    <p class="text-[16px]">Everybody is different, which is why we
+                                    <p class="text-[16px] text-center">Everybody is different, which is why we
                                         offer styles for every body.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-[20px] card-1 flex items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md w-[490px] 
+                        <div class="mb-[20px] card-1 flex flex-col sm:flex-row items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md sm:w-[490px] my-3 
                         pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded-[20px]">
                             <div class="shoping-icon">
                                 <img src="assets/icons/house.png" alt="">
                             </div>
                             <div class="shoping-text">
                                 <div class="card-title">
-                                    <h2 class="text-[24px] text-[#363958] mb-[15px]">Find the perfect Fit</h2>
+                                    <h2 class="text-[24px] text-[#363958] mb-[15px] text-center">Find the perfect Fit</h2>
                                 </div>
                                 <div class="card-info">
-                                    <p class="text-[16px]">Everybody is different, which is why we
+                                    <p class="text-[16px] text-center">Everybody is different, which is why we
                                         offer styles for every body.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-1 flex items-center gap-[40px]  card-bg bg-[#ffffff] shadow-md w-[490px] 
+                        <div class="card-1 flex flex-col sm:flex-row items-center gap-[40px] card-bg bg-[#ffffff] shadow-md sm:w-[490px] 
                         pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded-[20px]">
                             <div class="shoping-icon">
                                 <img src="assets/icons/house.png" alt="">
                             </div>
                             <div class="shoping-text">
                                 <div class="card-title">
-                                    <h2 class="text-[24px] text-[#363958] mb-[15px]">Find the perfect Fit</h2>
+                                    <h2 class="text-[24px] text-[#363958] mb-[15px] text-center">Find the perfect Fit</h2>
                                 </div>
                                 <div class="card-info">
-                                    <p class="text-[16px]">Everybody is different, which is why we
+                                    <p class="text-[16px] text-center">Everybody is different, which is why we
                                         offer styles for every body.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
+
                 <div class="shoping-right">
                     <img src="assets/images/shopping 1.png" alt="">
                 </div>
@@ -307,14 +310,7 @@
         </div>
     </section>
     <!--SHOPING SECTION START -->
-
-
-    <!-- SECTION START -->
-    <!-- SECTION START -->
-
-
-    <!-- SECTION START -->
-    <!-- SECTION START -->
+ 
 </body>
 
 </html>
